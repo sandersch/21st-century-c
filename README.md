@@ -29,11 +29,9 @@ Any other ordering, such as gcc -lbroad -lgeneral specific.o, will probably fail
     pkg-config --libs gsl libxml-2.0
     # -lgsl -lgslcblas -lm -lxml2
 
-    :::bash   
     pkg-config --cflags gsl libxml-2.0
     # -I/usr/include/libxml2
-
-    :::bash   
+ 
     gcc `pkg-config --cflags --libs gsl libxml-2.0` -o specific specific.c
     # equal to
     gcc -I/usr/include/libxml2 -lgsl -lgslcblas -lm -lxml2 -o specific specific.c
@@ -43,7 +41,6 @@ Any other ordering, such as gcc -lbroad -lgeneral specific.o, will probably fail
 
     :::bash   
     export LD_LIBRARY_PATH=libpath:$LD_LIBRARY_PATH
-
-    :::bash   
+ 
     gcc ... LDADD=-Llibpath -Wl,-Rlibpath ...
 
