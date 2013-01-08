@@ -1,4 +1,5 @@
-gcc erf.c -o erf -lm -g -Wall -O3 -std=gnu11
+    :::bash    
+    gcc erf.c -o erf -lm -g -Wall -O3 -std=gnu11
 
 -g adds symbols for debugging. Without it, your debugger won’t be able to give you variable or function names. They don’t slow down the program, and we don’t care if the program is a kilobyte larger, so there’s little reason to not use this.
 -std=gnu11 is gcc-specific, and specifies that gcc should allow code conforming to the C11 and POSIX standards. Otherwise, gcc will count certain now-valid bits of syntax as invalid. As of this writing, some systems still predate C11, in which case, use -std=gnu99. gcc only; everybody else switched to C99 being the default a long time ago.
