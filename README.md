@@ -41,6 +41,21 @@ Any other ordering, such as gcc -lbroad -lgeneral specific.o, will probably fail
 
     :::bash   
     export LD_LIBRARY_PATH=libpath:$LD_LIBRARY_PATH
- 
+    # or
     gcc ... LDADD=-Llibpath -Wl,-Rlibpath ...
+
+
+# Makefile
+
+    :::bash  
+    export CFLAGS='-g -Wall -O3'
+
+    # Set a makefile variable.
+    make CFLAGS="-g -Wall" 
+    # Set an environment variable that only make and its children see.
+    CFLAGS="-g -Wall" make
+
+
+
+
 
