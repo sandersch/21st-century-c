@@ -55,6 +55,12 @@ Any other ordering, such as gcc -lbroad -lgeneral specific.o, will probably fail
     # Set an environment variable that only make and its children see.
     CFLAGS="-g -Wall" make
 
+# Pointers
+
+Structures Get Copied, Arrays Get Aliased
+
+Bear in mind that when you see *i on a declaration line, it is a pointer to something; when you see *i on a nondeclaration line, it is the pointed-to value.
+
 
 
 

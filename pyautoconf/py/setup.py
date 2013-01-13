@@ -4,7 +4,7 @@ py_modules= ['pvnrt']
 
 Emodule = Extension('pvnrt',
        libraries=['pvnrt'],
-       library_dirs=['..'],
+       library_dirs=['../.libs'],
        sources = ['ideal.py.c'])
 
 setup (name = 'pvnrt',
