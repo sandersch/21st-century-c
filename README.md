@@ -61,7 +61,11 @@ Structures Get Copied, Arrays Get Aliased
 
 Bear in mind that when you see *i on a declaration line, it is a pointer to something; when you see *i on a nondeclaration line, it is the pointed-to value.
 
+# Macros
 
+For gcc, Clang, and icc, use -E to only run the preprocessor, printing the expanded version of everything to stdout.
+    :::bash
+    gcc -E mycode.c |less
 
 
 
