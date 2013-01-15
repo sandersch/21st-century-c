@@ -67,5 +67,8 @@ For gcc, Clang, and icc, use -E to only run the preprocessor, printing the expan
     :::bash
     gcc -E mycode.c |less
 
+The POSIX standard also specifies that there be a command-line iconv
+program, a shell-friendly wrapper to the C function.
+
 
 
