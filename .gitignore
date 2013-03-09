@@ -1,3 +1,4 @@
 autoconftest/autodemo
 pyautoconf/py/autodemo
 getenv/getenv
+getenv/getpath
